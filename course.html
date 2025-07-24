@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>كورس HTML المفصل</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      margin: 0;
+      display: flex;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #009578;
+      color: rgb(252, 252, 252);
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      position: fixed;
+    }
+    .sidebar h2 {
+      font-size: 22px;
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .sidebar ul li a:hover {
+      color: #f1f1f1;
+      text-decoration: underline;
+    }
+    .content {
+      margin-right: 270px;
+      padding: 40px;
+      background-color: #f9f9f9;
+      flex: 1;
+    }
+    .content h2 {
+      color: #009578;
+      margin-top: 60px;
+    }
+    .content p, .content ul {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+    }
+    code {
+      background-color: #0b57fa;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>فهرس الدروس</h2>
+    <ul>
+      <li><a href="#intro">مقدمة عن HTML</a></li>
+      <li><a href="#syntax">تركيب HTML</a></li>
+      <li><a href="#tags">الوسوم الأساسية</a></li>
+      <li><a href="#attributes">الخصائص (Attributes)</a></li>
+      <li><a href="#images">إدراج الصور</a></li>
+      <li><a href="#links">الروابط</a></li>
+      <li><a href="#lists">القوائم</a></li>
+      <li><a href="#practice">تمرين عملي</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2 id="intro">مقدمة عن HTML</h2>
+    <p>HTML هي اختصار لـ <strong>HyperText Markup Language</strong>، وهي اللغة الأساسية التي تُستخدم لإنشاء صفحات الويب.</p>
+
+    <h2 id="syntax">تركيب HTML</h2>
+    <p>كل مستند HTML يحتوي على الهيكل التالي:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;مرحبا بالعالم!&lt;/h1&gt;
+    &lt;p&gt;هذا مثال على صفحة HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2 id="tags">الوسوم الأساسية</h2>
+    <ul>
+      <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> — عنوان رئيسي</li>
+      <li><code>&lt;p&gt;...&lt;/p&gt;</code> — فقرة نصية</li>
+      <li><code>&lt;br&gt;</code> — سطر جديد</li>
+      <li><code>&lt;hr&gt;</code> — خط أفقي</li>
+    </ul>
+
+    <h2 id="attributes">الخصائص (Attributes)</h2>
+    <p>يمكن إضافة خصائص للوسوم للتحكم بها، مثل:</p>
+    <pre><code>&lt;a href="https://example.com"&gt;زيارة الموقع&lt;/a&gt;</code></pre>
+    <p>الخاصية <code>href</code> تحدد وجهة الرابط.</p>
+
+    <h2 id="images">إدراج الصور</h2>
+    <p>لاستخدام صورة في HTML:</p>
+    <pre><code>&lt;img src="image.jpg" alt="وصف الصورة"&gt;</code></pre>
+
+    <h2 id="links">الروابط</h2>
+    <p>يمكن إنشاء روابط باستخدام الوسم <code>&lt;a&gt;</code>:</p>
+    <pre><code>&lt;a href="https://google.com"&gt;اذهب إلى Google&lt;/a&gt;</code></pre>
+
+    <h2 id="lists">القوائم</h2>
+    <p>مثال على قائمة غير مرتبة:</p>
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;بند 1&lt;/li&gt;
+  &lt;li&gt;بند 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <h2 id="practice">تمرين عملي</h2>
+    <p>جرب إنشاء صفحة تحتوي على:</p>
+    <ul>
+      <li>عنوان</li>
+      <li>فقرة</li>
+      <li>صورة</li>
+      <li>رابط</li>
+      <li>قائمة</li>
+    </ul>
+    <p>احفظ الملف بصيغة <code>.html</code> وافتحه في المتصفح!</p>
+  </div>
+
+</body>
+</html>
